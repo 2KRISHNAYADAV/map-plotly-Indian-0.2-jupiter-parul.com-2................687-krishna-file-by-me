@@ -5,7 +5,7 @@
 
 <h1>Jupyter Notebook Code</h1>
 
-<div class="code-section">
+
 <code>
 # Importing required libraries
 import plotly.graph_objs as go
@@ -50,7 +50,7 @@ fig.show()
     <img src="https://github.com/user-attachments/assets/25825120-e940-4ae2-a4c7-6c6bd074b0b5" alt="Screenshot 2024-09-20 134451" style="max-width: 100%;">
 </div>
 
-<h2>Second Code Example</h2>
+<h2>Sphere Earth Visualization   projectiontype='orthographic</h2>
 
 <div class="code-section">
 <code>
@@ -89,23 +89,21 @@ fig.show()
 </code>
 </div>
 
-<h2>Second Output</h2>
+<h2>Output</h2>
 
-<div class="output-section">
-    <img src="https://github.com/user-attachments/assets/d0cfffc3-9477-497c-98a2-c30b835ddaae" alt="Screenshot 2024-09-20 140002" style="max-width: 100%;">
-</div>
+ <img src="https://github.com/user-attachments/assets/d0cfffc3-9477-497c-98a2-c30b835ddaae" alt="Screenshot 2024-09-20 140002" style="max-width: 100%;">
+
 
 <h1> Albers Projection </h1>
 
-<div class="output-section">
-    <img src="https://github.com/user-attachments/assets/2b8fd676-698b-4572-ae4c-f537763b4d0d" alt="Screenshot 2024-09-20 140131" style="max-width: 100%;">
-</div>
+
+<img src="https://github.com/user-attachments/assets/2b8fd676-698b-4572-ae4c-f537763b4d0d" alt="Screenshot 2024-09-20 140131" style="max-width: 100%;">
+
 
 <h2> Output</h2>
 
-<div class="output-section">
-    <img src="https://github.com/user-attachments/assets/67dde7b7-0245-45ab-8f36-1971588bd36d" alt="Screenshot 2024-09-20 140147" style="max-width: 100%;">
-</div>
+ <img src="https://github.com/user-attachments/assets/67dde7b7-0245-45ab-8f36-1971588bd36d" alt="Screenshot 2024-09-20 140147" style="max-width: 100%;">
+
 
 <CODE>
 
@@ -126,7 +124,7 @@ fig = go.Figure(go.Scattergeo(
     marker=dict(color='red', size=10)
 ))
 
-# Update layout with geographical properties
+#  layout with geographical properties
 fig.update_layout(
     width=600,
     height=600,
@@ -168,7 +166,7 @@ fig.update_layout(
     ]
 )
 
-# Create frames for rotation animation
+#  frames for rotation animation
 lon_range = np.arange(lon, 360 + lon, 2)
 frames = [
     go.Frame(
@@ -181,7 +179,7 @@ frames = [
     ) for l in lon_range
 ]
 
-# Update frames in the figure
+#  frames in the figure
 fig.update(frames=frames)
 
 # Show the figure
